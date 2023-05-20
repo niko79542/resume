@@ -1,5 +1,94 @@
 body, button {
-    font-size: 50px;
-    background-color: antiquewhite;
-    line-height: 90px;
+    display: block;
+    margin: 0;
+    font: 18px Arial,sans-serif;
+    line-height: 1.47;
+    background-color: #F3F3F3;
+    color: #4A4A4A;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    margin-bottom: 24px;
+    padding: 40px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+}
+
+.resume {
+    width: 1000px;
+    margin: 24px;
+}
+
+h1 {
+    display: block;
+    margin: 0px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    color: rgb(26, 26, 26);
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 8px;
+    padding: 0px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 0.9;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(26, 26, 26);;
+}
+
+.sub-header {
+    font-size: 14px;
+    text-align: center;
+}
+.visitor {
+    display: inline-block;
+}
+
+p {
+    display: block;
+    color: rgb(74, 74, 74);
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+li {
+    color: rgb(74, 74, 74);
+    font-size: 18px;
+    margin-bottom: 4px;
+    margin-left: 15px;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+
+.date-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skills {
+    /* padding-left: 0; */
 }

@@ -4,13 +4,176 @@
   <link rel="stylesheet" href="styles.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Software Engineer - Niko Skoularikis</title>
 </head>
 <body>
-    Resume </br>
-    <button onclick="incrementMe()">Click Me</button>
+  <div class="resume">
+    <div class="card">
+      <h1>Niko Skoularikis</h1>
+      <div class="sub-header">
+        <b>San Francisco, CA |
+          <a href="https://www.github.com/niko79542/visitor-counter">
+            Visitor Count <div class="visitor"></div>
+          </a>
+        </b></div>
+      <h2>ENTERPRISE EXPERIENCE</h2>
+      <div class="date-box">
+        <p>
+          <b>AWS Lambda</b>
+        </p> |
+        <p>
+          <b>   Terraform</b> 
+        </p> |
+        <p>
+          <b>   DataDog  </b>
+        </p> |
+        <p>
+          <b>   Docker  </b>
+        </p> |
+        <p>
+          <b>   NodeJS/Python  </b>
+        </p> 
+      </div>
+    </div>
 
-    <div id="counter">1</div>
+    <div class="card">
+      <h2> WORK EXPERIENCE</h2>
+      <div class="date-box">
+        <p>
+          <b>Fizz Buzz Group LLC | Senior Software Engineer | San Francisco, CA (Remote)</b>
+        </p>
+        <p>June 2022 - (present)</p>
+      </div>
+      <p><i>Developed ETL processes between Salesforce and Genesys IVR teams in a fast paced <b>Agile</b> environment</i></p>
+        <ul>
+          <li>
+            Developed custom <b>Terraform</b> modules for the deployment of  mocked and unit-tested  <b>AWS Lambdas</b> used by cross-functional teams, achieving 100% of JIRA sprint commitment.
+          </li>
+          <li>
+            Provided mentorship and training to junior engineers on how to effectively debug Jest unit tests, leading to in our team attaining 80% test coverage across four mature codebases and in new projects.
+          </li>
+          <li>
+            Led the migration of configuration data from a legacy database to AWS RDS Aurora by writing a Lambda to asynchronously ingest, process, format and batch load to the database, resulting in significant cost savings of the salaries of the 4-person Avaya IVR team.
+          </li>
+          <li>
+            Proxied requests for auto-dialer account lookup through a <b>GraphQL</b> middleware layer using API Gateway, Terraform, Lambdas to handle 30,000 active customer calls daily, catering to  the scaling needs of a business.
+          </li>
+        </ul>
+        <p><i>Led migration of deployments to <b>Kubernetes</b> clusters to leverage DataDog performance and monitoring</i></p>
+        <ul>
+          <li>
+            Streamlined indexing of logs from a sidecar service via a custom pipeline to process 3 million logs daily and generate 80% savings on DataDog expenses associated with this service.
+          </li>
+          <li>
+            Containerized an internal front-end application along with a sidecar service using <b>Docker</b> to demonstrate a customizable, proprietary logging and analytics library accessible to an organization of 1000 developers.
+          </li>
+          <li>
+            Worked collaboratively across teams to troubleshoot pipeline errors between <b>Harness</b> and <b>Rancher</b>, facilitating support for blue/green deployments, resulting in a time savings of 8 developer hours per sprint.
+          </li>
+        </ul>
+      <div class="date-box">
+        <p>
+          <b>Bitcash Inc. | Senior Software Engineer | San Francisco, CA</b>
+        </p>
+        <p>Apr 2020 - March 2022</p>
+      </div>
+      <p><i>100x - Ownership of backend [<b>NodeJS, GraphQL, AWS</b>] for marketing platform, integrating Steemit blockchain SDK</i></p>
+      <ul>
+        <li>
+          Architected extendable RESTful API with Node.js, Koa.js, and GraphQL which integrated Steem Blockchain API, resulting in 75% reduced response sizes with more versatile queries compared to hitting 3rd party API directly.
+        </li>
+        <li>
+          Automated daily database update process using cron job in Node.js to store top 100 blockchain posts and corresponding 10,000 comments in our system.
+        </li>
+        <li>
+          Deployed application to AWS (RDS, EC2, EBS, S3, IAM) reducing web service costs by 80%.
+        </li>
+        <li>
+          Hosted application environments in their own VPC to limit access from public internet resulting in reduced developer stress and increased productivity.</li>
+      </ul>
+      <div class="date-box">
+        <p>
+          <b>Dictionary.com | Software Engineer | Oakland, CA</b>
+        </p>
+        <p>May 2019 - Mar 2020</p>
+      </div>
+      <p><i>Delivered performant Frontend solutions across 5 web apps [JavaScript, ReactJS, Redux, SSR] while managing priorities between designers and Dictionary, Thesaurus, Quiz and Grammar Tool stakeholders</i></p>
+      <ul>
+        <li>
+          Integrated JavaScript tokenizer and in house APIs to 'grammar coach' beta to attract 4000 daily users.         </li>
+        <li>
+          Collaborated with cross-functional Agile team of software engineers to deploy and analyze weekly quizzes for engagement, resulting in 12.5% increased average time spent on page.
+        </li>
+        <li>
+          Minified existing JavaScript, rewrote extraneous CSS, and worked with designers to slim down oversized image assets to reduce bounce rate by 2% over 60 million monthly users.  
+        </li>
+      </ul>
+      <div class="date-box">
+        <p>
+          <b>Iterio Data | Software Engineer | San Francisco, CA</b>
+        </p>
+        <p>Jan 2017 - May 2019</p>
+      </div>
+      <p><i>Delivered Frontend [ReactJS, MaterialUI] solutions for data driven decisions and 3rd party data integration</i></p>
+      <ul>
+        <li>Rebuilt mortgage data upload portal using JavaScript, ReactJS, and Material UI, resulting in 30% page load speed improvement over previous Java based version of app.</li>
+        <li>Refactored home page using JavaScript, ReactJS, CSS Modules, CSS Animations and Responsive Web Design principles, improving load time by 60% across slower mobile networks.</li>
+        <li>Developed front end for internal advertising data integration app, leveraging design tactics from TurboTax and Skype allowing us to upsell products based on client data/needs, increasing sales by 10% YoY.</li>
+      </ul>
+      <p><i>DonorPoints [Ruby on Rails] development for platform acting as digital marketing funnel for Bay Area nonprofits</i></p>
+
+      <ul>
+        <li>Automated sending of user emails at 5 separate stages of donation funnel using ActionMailer and MailChimp with Ruby on Rails to reach 1.5 million previous customers, leading to 4% conversion rate.</li>
+        <li>Wrote Rspec tests for our app's rewards point calculation to ensure rewards $ were allocated correctly; $40,000 in donation kickback rewards were distributed over 2018 holiday season.</li>
+        <li>Documented installation of app and 13 Ruby on Rails models, saving 1 week of onboarding costs per new dev.</li>
+        <li>Created custom admin panel using Ruby on Rails and administrate gem to simplify process of verifying donation rewards points to save 3 hours of manager work per week.</li>
+      </ul>
+      
+      <div class="date-box">
+        <p>
+          <b>FactSet | Database Developer | Norwalk, CT</b>
+        </p>
+        <p>Apr 2012 - Jun 2014</p>
+      </div>
+        <ul>
+          <li>
+            Cleaned historical end of day stock price data database overlaying 1 million data point corrections saving cost of $50,000 new data dump purchase using Visual Basic, Microsoft SQL Server 2008 and data cleansing.
+          </li>
+          <li>Performed A/B testing with transition of in house databases to Microsoft SQL Server 2008.</li>
+          <li>Added value through automation of manual tasks and writing documentation and training off-shore teams. </li>
+        </ul>
+    </div>
+
+    <div class="card">
+      <h2> EDUCATION</h2>
+      <div class="date-box">
+        <p>
+          <b>B.S. in Management Information Systems and Finance, </b><i>University of Connecticut</i>
+        </p>
+        <p>May 2012</p>
+      </div>
+      <h2>PROJECT WORK</h2>
+      <div class="date-box">
+        <p>
+          <b>AWS Cloud Resume Challenge | Software Engineer | <a href="https://github.com/niko79542/visitor-counter">code</a> | <a href="https://niko-skoularikis.link">live</a></b>
+        </p>
+        <p>2022</p>
+      </div>
+      <p><i>Served resume over https and through a CDN including a persistent visitor counter using entirely AWS services [IAM, Cloudfront, ssl, S3, DynamoDB, API Gateway, Lambda]</i></p>
+
+      <div class="date-box">
+        <p>
+          <b>TechMeetupSF | Software Engineer | <a href="https://github.com/techMeetupSF/techMeetupSF">code</a></b>
+        </p>
+        <p>2018</p>
+      </div>
+      <p><i>`Discover Tech Meetups with Free Food in San Francisco` - crafted front end with JavaScript, ReactJS and MaterialUI to improve upon Meetup.com's search functionality and attract ~50 monthly active users.</i></p>
+
+    </div>
+
+  </div>
+  
+  
 </body>
 <script type="text/javascript" src="index.js"></script>
 </html>
